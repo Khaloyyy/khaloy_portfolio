@@ -2,7 +2,7 @@ name: portfolio
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -34,6 +34,40 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  #Riverpod
+  riverpod: ^2.6.1
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  #Dio
+  dio: ^5.8.0+1
+
+  #freezed
+  freezed_annotation: ^3.0.0
+  freezed: ^3.0.3
+
+  #supertokens
+  supertokens_flutter: ^0.6.3
+
+  #auto_route
+  go_router: ^14.8.1
+  flutter_screenutil: ^5.9.3
+  auto_route: ^10.0.0
+
+  #flutter_native_splash
+  flutter_native_splash: ^2.4.5
+
+  # Sidebar X
+  sidebarx: ^0.17.1
+
+  #Json
+  cross_file: ^0.3.4+2
+  json_annotation: ^4.9.0
+
+  #url_strategy
+  url_strategy: ^0.3.0
+  intl: ^0.20.2
+  animated_snack_bar: ^0.4.0
 
 dev_dependencies:
   flutter_test:
@@ -45,13 +79,16 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  riverpod_generator: ^2.6.5
+  json_serializable: ^6.9.4
+  auto_route_generator: ^10.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
