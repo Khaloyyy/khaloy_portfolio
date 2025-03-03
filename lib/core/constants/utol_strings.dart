@@ -1,2 +1,2 @@
-const String appName = 'UTOL Admin Portal';
-const String version = '2.2.0';
+const String appName = 'Khaloy Portfolio';
+const String appVersion = '1.0.0';

@@ -21,52 +21,54 @@ class ExpansionMenuTile extends StatelessWidget {
     return ExpansionTile(
       key: PageStorageKey<UtolMenuModel>(menu),
       initiallyExpanded: isSelected,
-      iconColor: colors.secondary,
+      iconColor: colors.primary,
       collapsedIconColor: colors.lighterMainText,
-      title: isSelected
-          ? Text(
-              menu.title,
-              style: UtolTextStyles.smallBold.copyWith(color: colors.secondary),
-            )
-          : Text(
-              menu.title,
-              style: UtolTextStyles.smallBold.copyWith(
-                color: colors.lighterMainText,
+      title:
+          isSelected
+              ? Text(
+                menu.title,
+                style: UtolTextStyles.smallBold.copyWith(color: colors.primary),
+              )
+              : Text(
+                menu.title,
+                style: UtolTextStyles.smallBold.copyWith(
+                  color: colors.lighterMainText,
+                ),
               ),
-            ),
       leading: _leadingWidget(isSelected),
       trailing: _trailingWidget(isSelected),
-      children: menu.subMenu.map(
-        (UtolMenuModel e) {
-          return e.subMenu.isNotEmpty
-              ? Padding(
+      children:
+          menu.subMenu.map((UtolMenuModel e) {
+            return e.subMenu.isNotEmpty
+                ? Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: ExpansionMenuTile(menu: e),
                 )
-              : Padding(
+                : Padding(
                   padding: const EdgeInsets.only(left: 15),
                   child: MenuTile(menu: e),
                 );
-        },
-      ).toList(),
+          }).toList(),
     );
   }
 
-  Widget? _leadingWidget(bool isSelected) => (menu.leading != null)
-      ? menu.leading
-      : (menu.leadingIcon != null)
+  Widget? _leadingWidget(bool isSelected) =>
+      (menu.leading != null)
+          ? menu.leading
+          : (menu.leadingIcon != null)
           ? Icon(
-              menu.leadingIcon,
-              color: isSelected ? colors.secondary : colors.lighterMainText,
-              size: 20,
-            )
+            menu.leadingIcon,
+            color: isSelected ? colors.primary : colors.lighterMainText,
+            size: 20,
+          )
           : null;
 
-  Widget? _trailingWidget(bool isSelected) => (menu.trailingIcon != null)
-      ? Icon(
-          menu.trailingIcon,
-          color: isSelected ? colors.secondary : colors.lighterMainText,
-          size: 20,
-        )
-      : null;
+  Widget? _trailingWidget(bool isSelected) =>
+      (menu.trailingIcon != null)
+          ? Icon(
+            menu.trailingIcon,
+            color: isSelected ? colors.primary : colors.lighterMainText,
+            size: 20,
+          )
+          : null;
 }

@@ -44,6 +44,36 @@ class _UtolSideNavWidgetState extends ConsumerState<UtolSideNavWidget> {
             _pushToRoute(const HomepageRoute());
           },
         ),
+
+        UtolMenuModel(
+          title: 'Educational Background',
+          leadingIcon: Icons.school,
+          onPressed: () {
+            _pushToRoute(const EductionalBackgroundRoute());
+          },
+        ),
+        UtolMenuModel(
+          title: 'About Me',
+          leadingIcon: Icons.person,
+          onPressed: () {
+            _pushToRoute(const AboutMeRoute());
+          },
+        ),
+
+        UtolMenuModel(
+          title: 'Reach Out',
+          leadingIcon: Icons.chat,
+          onPressed: () {
+            _pushToRoute(const ReachOutRoute());
+          },
+        ),
+        UtolMenuModel(
+          title: 'Skills',
+          leadingIcon: Icons.work,
+          onPressed: () {
+            _pushToRoute(const SkillsRoute());
+          },
+        ),
       ],
     );
   }

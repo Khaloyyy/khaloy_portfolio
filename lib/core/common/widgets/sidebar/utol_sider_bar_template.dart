@@ -42,10 +42,10 @@ class _UtolSideNavigationBarState extends State<UtolSideNavigationBar> {
   Widget build(BuildContext context) {
     return SizedBox(
       width: 250,
-      height: MediaQuery.of(context).size.height,
+      height: 400,
       child: Drawer(
         elevation: 0,
-        backgroundColor: colors.subText,
+        backgroundColor: colors.primary,
         shape: const RoundedRectangleBorder(),
         child: Column(
           children: <Widget>[
