@@ -1,6 +1,6 @@
-# portfolio
+# Khaloyss portfolio
 
-A new Flutter project.
+A simple web based portfolio application showcasing the skills and Personality of Khaloy
 
 ## Getting Started
 
