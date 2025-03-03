@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../routes/router.dart';
@@ -18,8 +19,15 @@ class UtolSideNavWidget extends ConsumerStatefulWidget {
 class _UtolSideNavWidgetState extends ConsumerState<UtolSideNavWidget> {
   late double widgetIndex;
 
-  void _pushToRoute(Widget route) {
-    Navigator.of(context).push(MaterialPageRoute(builder: (context) => route));
+  @override
+  void initState() {
+    widgetIndex = widget.selectedIndex;
+
+    super.initState();
+  }
+
+  Future<void> _pushToRoute(PageRouteInfo<dynamic> route) async {
+    context.router.replace(route);
   }
 
   @override

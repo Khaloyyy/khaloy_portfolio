@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../constants/utol_colors.dart' as colors;
 
 import 'components/expansion_menu_tile.dart';
-import 'components/header_section.dart';
 import 'components/menu_item.dart';
 import 'models/utol_menu_model.dart';
 
@@ -46,11 +45,10 @@ class _UtolSideNavigationBarState extends State<UtolSideNavigationBar> {
       height: MediaQuery.of(context).size.height,
       child: Drawer(
         elevation: 0,
-        backgroundColor: colors.primaryDark,
+        backgroundColor: colors.subText,
         shape: const RoundedRectangleBorder(),
         child: Column(
           children: <Widget>[
-            const HeaderSection(),
             SizedBox(height: 4.h),
             Expanded(
               child: Scrollbar(
