@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-// import '../../../../routes/routes_config.dart';
+import '../../../../routes/router.dart';
 
 import 'models/utol_menu_model.dart';
 import 'utol_sider_bar_template.dart';
@@ -18,6 +18,10 @@ class UtolSideNavWidget extends ConsumerStatefulWidget {
 class _UtolSideNavWidgetState extends ConsumerState<UtolSideNavWidget> {
   late double widgetIndex;
 
+  void _pushToRoute(Widget route) {
+    Navigator.of(context).push(MaterialPageRoute(builder: (context) => route));
+  }
+
   @override
   Widget build(BuildContext context) {
     //
@@ -25,7 +29,13 @@ class _UtolSideNavWidgetState extends ConsumerState<UtolSideNavWidget> {
       selectedIndex: widgetIndex,
 
       menu: <UtolMenuModel>[
-        // ==================== Dashboard ==================== //
+        UtolMenuModel(
+          title: 'Homepage',
+          leadingIcon: Icons.dashboard,
+          onPressed: () {
+            _pushToRoute(const HomepageRoute());
+          },
+        ),
       ],
     );
   }
