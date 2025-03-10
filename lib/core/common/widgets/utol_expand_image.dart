@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/constants/utol_colors.dart' as colors;
 import 'buttons/utol_button.dart';
@@ -38,12 +37,13 @@ class ExpandImageDialog extends StatelessWidget {
                   Flexible(
                     child: Text(
                       fileName,
-                      style:
-                          Theme.of(context).textTheme.headlineLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: colors.mainText,
-                                fontSize: 24,
-                              ),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.headlineLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: colors.mainText,
+                        fontSize: 24,
+                      ),
                     ),
                   ),
                   InkWell(
@@ -79,7 +79,7 @@ class ExpandImageDialog extends StatelessWidget {
                   title: 'Okay',
                   backgroundColor: colors.secondary,
                   onPressed: () {
-                    context.router.popForced();
+                    Navigator.of(context).pop();
                   },
                 ),
               ),

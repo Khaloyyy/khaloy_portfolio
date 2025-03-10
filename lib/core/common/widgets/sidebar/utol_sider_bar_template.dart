@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../constants/utol_colors.dart' as colors;
-
 import 'components/expansion_menu_tile.dart';
 import 'components/menu_item.dart';
 import 'models/utol_menu_model.dart';
