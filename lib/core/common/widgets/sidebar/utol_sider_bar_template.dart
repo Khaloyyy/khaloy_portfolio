@@ -42,8 +42,8 @@ class _UtolSideNavigationBarState extends State<UtolSideNavigationBar> {
       width: 250,
       height: 400,
       child: Drawer(
-        elevation: 0,
-        backgroundColor: const Color.fromARGB(255, 68, 165, 197),
+        elevation: 3,
+        backgroundColor: const Color.fromARGB(0, 68, 165, 197),
         shape: const RoundedRectangleBorder(),
         child: Column(
           children: <Widget>[
