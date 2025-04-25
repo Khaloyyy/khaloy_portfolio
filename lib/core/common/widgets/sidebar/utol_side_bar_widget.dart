@@ -61,17 +61,17 @@ class _UtolSideNavWidgetState extends ConsumerState<UtolSideNavWidget> {
         ),
 
         UtolMenuModel(
-          title: 'Reach Out',
-          leadingIcon: Icons.chat,
-          onPressed: () {
-            _pushToRoute(const ReachOutRoute());
-          },
-        ),
-        UtolMenuModel(
           title: 'Skills',
           leadingIcon: Icons.work,
           onPressed: () {
             _pushToRoute(const SkillsRoute());
+          },
+        ),
+        UtolMenuModel(
+          title: 'Reach Out',
+          leadingIcon: Icons.chat,
+          onPressed: () {
+            _pushToRoute(const ReachOutRoute());
           },
         ),
       ],
