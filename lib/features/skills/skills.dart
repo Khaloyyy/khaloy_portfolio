@@ -15,7 +15,7 @@ class SkillsScreen extends ConsumerWidget {
       body: Row(
         children: <Widget>[
           // ====================== SIDEBAR ====================== //
-          const UtolSideNavWidget(selectedIndex: 4),
+          const UtolSideNavWidget(selectedIndex: 3),
 
           // ====================== CONTENT ====================== //
           const Expanded(child: Center(child: Text('Skills Screen'))),
