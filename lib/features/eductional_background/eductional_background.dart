@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/core/constants/utol_colors.dart' as colors;
 import '../../../../core/common/widgets/sidebar/utol_side_bar_widget.dart';
 
 @RoutePage()
@@ -10,7 +11,7 @@ class EductionalBackgroundScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 30, 215, 248),
+      backgroundColor: colors.background,
       body: Row(
         children: <Widget>[
           // ====================== SIDEBAR ====================== //
