@@ -15,7 +15,7 @@ class ReachOutScreen extends ConsumerWidget {
       body: Row(
         children: <Widget>[
           // ====================== SIDEBAR ====================== //
-          const UtolSideNavWidget(selectedIndex: 3),
+          const UtolSideNavWidget(selectedIndex: 4),
 
           // ====================== CONTENT ====================== //
           const Expanded(child: Center(child: Text('Reach Out Screen'))),
