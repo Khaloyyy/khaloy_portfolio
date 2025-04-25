@@ -2,7 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:supertokens_flutter/supertokens.dart';
 import '../../features/homepage/homepage_screen.dart';
-import '../features/about_me/about_me.dart';
+import '../features/about_me/presentation/screens/about_me.dart';
 import '../features/eductional_background/eductional_background.dart';
 import '../features/reach_out/reach_out.dart';
 import '../features/skills/skills.dart';
